@@ -837,7 +837,7 @@ a {
 @media only screen and (min-width: 825px) {
   .wrapper-bg {
     background-image: url("../../images/hero-bg.svg");
-    background-position: calc(50% + 390px) calc(50% - 60px);
+    background-position: calc(50% + 440px) calc(50% - 60px);
     background-size: 780px auto;
   }
   .hero {
