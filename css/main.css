@@ -1885,13 +1885,14 @@ button {
     color: var(--main-text-color);
   }
 }
-.wrapper-bg {
+.pricing-wrapper-bg {
   background-image: url("../images/simple-circle.svg");
   background-size: 800px;
   background-position: top -600px left calc(50% + 500px);
+  background-repeat: no-repeat;
 }
 
-.hero {
+.pricing-hero {
   padding-top: 100px;
   padding-bottom: 0;
 }
@@ -1909,9 +1910,8 @@ button {
   margin-inline: auto;
 }
 
-.hero__text {
-  margin-bottom: 0;
-  text-align: center;
+.pricing-hero__text {
+  margin-bottom: 80px;
 }
 
 ul {
@@ -1940,12 +1940,10 @@ ul {
   grid-gap: 20px;
   place-content: center;
   padding: 24px 0;
-  text-align: center;
 }
 
 .pricing__wrapper__list {
   position: relative;
-  padding: 24px 0;
 }
 .pricing__wrapper__list::before, .pricing__wrapper__list::after {
   content: "";
@@ -1958,7 +1956,7 @@ ul {
 
 .pricing__wrapper__item {
   width: 50%;
-  margin-inline: auto;
+  margin-left: 10%;
   opacity: 0.25;
 }
 
@@ -1971,7 +1969,7 @@ ul {
   content: "";
   position: absolute;
   top: 25%;
-  left: 5%;
+  left: -15%;
   width: 12px;
   height: 8px;
   background-image: url("../images/check.svg");
