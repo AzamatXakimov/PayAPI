@@ -65,9 +65,13 @@
 
     &:not(:focus):not(:placeholder-shown):invalid{
         outline: 1px solid #f00;
-        color: #f00;
     }
 }
+
+.site-email__button {
+        color: #f00;
+    }
+
 
 .site-email-button {
     max-width: 327px;
@@ -145,6 +149,10 @@
         width: 100%;
         flex-direction: row;
         align-items: center;
+    }
+    
+    .site-email__input{
+        padding-right: 60px;
     }
     
     .site-email-input{

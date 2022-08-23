@@ -1,0 +1,28 @@
+@use "./typography" as *;
+@use "./helpers/colors" as *;
+
+@each $prop, $value in $font-sizes{
+    .fz-#{$prop}{
+        font-size: #{$value};
+    }
+}
+
+@each $prop, $value in $font-weights{
+    .fw-#{$prop}{
+        font-weight: #{$value};
+    }
+}
+
+@each $prop, $value in $line-heights{
+    .lh-#{$prop}{
+        line-height: #{$value};
+    }
+}
+
+@each $type, $level in $colors{
+    @each $item, $color in $level{
+        .clr-#{$type}-#{$item}{
+            color: #{$color};
+        }
+    }
+}
