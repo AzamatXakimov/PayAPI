@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayAPI</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+</head>
+
+<body>
+
+    <div class="contact-wrapper-bg">
+        <!-- Header start -->
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__inner">
+                    <a class="logo" href="./index.html">
+                        <img src="./images/logo.svg" alt="logo">
+                    </a>
+                    <div class="site-header__navbar-window">
+                        <div class="site-header__btnbox">
+                            <button class="site-header__x-btn js-close-navbar" type="button"></button>
+                        </div>
+                        <div class="site-header__navbar">
+                            <nav class="site-header__nav">
+                                <ul class="site-header__nav-list">
+                                    <li class="site-header__nav-item">
+                                        <a class="site-header__nav-link" href="./pricing.html">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li class="site-header__nav-item">
+                                        <a class="site-header__nav-link" href="#">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="site-header__nav-item">
+                                        <a class="site-header__nav-link" href="#">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a class="site-header__link" href="#">
+                                Schedule a Demo
+                            </a>
+                        </div>
+                    </div>
+                    <button class="site-header__burger js-open-navbar" type="button"></button>
+                </div>
+            </div>
+        </header>
+        <!-- Header finish -->
+
+    </div>
+
+    <!-- Main start -->
+    <main class="site-main">
+        <!-- Hero section start  -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="contact-hero__textbox">
+                        <h2 class="hero__text fz-400">
+                            Submit a help request and we'll get in touch shortly
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section finish  -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <div class="contact__inner">
+                        <form class="contact__form" action="https://echo.htmlacademy.ru/courses">
+                            <input class="input contact__input" name="user_name" aria-label="enter your name" type="text" placeholder="Name">
+                            <input class="input contact__input" name="user_email" aria-label="enter your email" type="text" placeholder="Email Address">
+                            <input class="input contact__input" name="user_company" aria-label="enter company name" type="text" placeholder="Company Name">
+                            <input class="input contact__input" name="user_company_title" aria-label="enter company title" type="text" placeholder="Title">
+
+                            <textarea class="contact__textarea textarea" name="user_message" cols="30" rows="10" aria-label="enter your message" placeholder="Message"></textarea>
+
+                            <label class="contact__label">
+                                <input class="input contact__input" name="user_choice" aria-label="Stay up-to-date with company announcements and updates to our API" type="checkbox" placeholder="Stay up-to-date with company announcements and updates to our API">
+                                <span class="contact__span clr-secondary-100 fz-100 lh-200">
+                                    Stay up-to-date with company announcements and updates to our API
+                                </span>
+                            </label>
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                    <div class="contact__outer">
+                        <h3 class="contact__outer__title fz-300 lh-400 clr-secondary-100">
+                            Join the thousands of innovators already building with us
+                        </h3>
+                        <div class="cooperation__imgbox">
+                            <ul class="cooperation__list contact__outer__list">
+                                <li class="cooperation__item">
+                                    <a class="cooperation__img-link" href="#" target="blank">
+                                        <img class="cooperation__img cooperation__img--tesla" src="./images/tesla.svg"
+                                            alt="Tesla company">
+                                    </a>
+                                </li>
+                                <li class="cooperation__item">
+                                    <a class="cooperation__img-link" href="#" target="blank">
+                                        <img class="cooperation__img cooperation__img--microsoft" src="./images/microsoft.svg"
+                                            alt="Microsoft company">
+                                    </a>
+                                </li>
+                                <li class="cooperation__item">
+                                    <a class="cooperation__img-link" href="#" target="blank">
+                                        <img class="cooperation__img cooperation__img--hp" src="./images/packard.svg"
+                                            alt="Hewlett Packard company">
+                                    </a>
+                                </li>
+                                <li class="cooperation__item">
+                                    <a class="cooperation__img-link" href="#" target="blank">
+                                        <img class="cooperation__img cooperation__img--oracle" src="./images/Shape.svg"
+                                            alt="Oracle company">
+                                    </a>
+                                </li>
+                                <li class="cooperation__item">
+                                    <a class="cooperation__img-link" href="#" target="blank">
+                                        <img class="cooperation__img cooperation__img--google" src="./images/google.svg"
+                                            alt="Google company">
+                                    </a>
+                                </li>
+                                <li class="cooperation__item">
+                                    <a class="cooperation__img-link" href="#" target="blank">
+                                        <img class="cooperation__img cooperation__img--nvidia" src="./images/nvidia.svg"
+                                            alt="Nvida company">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article start -->
+        <article class="site-article">
+            <div class="container">
+                <div class="site-article__wrap">
+                    <h2 class="site-article__title">Ready to start?</h2>
+                    <form class="site-email-form" action="https://echo.htmlacademy.ru/" method="post"
+                        autocomplete="off">
+                        <input class="site-email-input" type="email" name="user_email" id="user_email"
+                            aria-label="Enter your email" required placeholder="Enter email address" />
+
+                        <button class="site-email-button" type="submit">
+                            Schedule a Demo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <!-- Article finish -->
+    </main>
+    <!-- Main finish  -->
+
+    <!-- Footer start -->
+    <footer class="site-footer">
+
+    </footer>
+    <!-- Footer finish -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.contact-hero{
+    padding-block: 100px 50px;
+}
+
+.contact__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form{
+    display: grid;
+}
+
+.input{
+    padding: 16px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--clr-secondary-100);
+    background-color: transparent;
+}
+
+.textarea{
+    padding: 16px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--clr-secondary-100);
+    background-color: transparent;
+}
+
+.contact__inner{
+    display: grid;
+    place-content: center;
+}
+
+.contact__outer{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    max-width: 650px;
+    margin-inline: auto;
+}
+
+@include media-query(laptop){
+    .contact__inner{
+        margin-right: 100px;
+    }
+}
