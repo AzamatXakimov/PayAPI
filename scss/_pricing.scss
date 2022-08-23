@@ -1,11 +1,11 @@
 @use "./mixins" as *;
-.wrapper-bg {
+.pricing-wrapper-bg {
   background-image: url("../images/simple-circle.svg");
   background-size: 800px;
   background-position: top -600px left calc(50% + 500px);
 }
 
-.hero {
+.pricing-hero {
   padding-top: 100px;
   padding-bottom: 0;
 }
@@ -17,7 +17,7 @@
   margin-inline: auto;
 }
 
-.hero__text {
+.pricing-hero__text {
   margin-bottom: 0;
   text-align: center;
 }
