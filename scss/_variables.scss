@@ -1,3 +1,5 @@
+@use "./helpers/colors" as *;
+@use "./typography" as *;
 /* ROOT */
 :root{
     --main-font-family: "Public Sans", "Arial", sans-serif; 
@@ -11,4 +13,22 @@
     --main-link-bg-color: #ba4270;
     --main-link-hover-bg: #da6d97;
     --main-white-text-color: #fbfcfe;
+
+    @each $type, $level in $colors{
+        @each $prop, $color in $level{
+            --clr-#{$type}-#{$prop}:#{$color};
+        }
+    }
+
+    @each $prop,$size in $font-sizes{
+        --fz-#{$prop}:#{$size};
+    }
+
+    @each $prop,$weight in $font-weights{
+        --fw-#{$prop}:#{$weight};
+    }
+
+    @each $prop,$height in $line-heights{
+        --lh-#{$prop}:#{$height};
+    }
 }
