@@ -64,6 +64,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     @include list-unstiled(0,0,0)
 }
 
@@ -73,6 +74,8 @@
     align-items: center;
     max-width: 328px;
     width: 100%;
+    margin-bottom: 48px;
+
 
     &::before{
         display: inline-block;
@@ -83,25 +86,46 @@
         margin-bottom: 33px;
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: cover;
+        background-size: cover;
         content: "";
     }
 
-    &:nth-child(1)::before{
-        background-image: url("../../images/personal-finance.svg");
+    &:nth-child(1){
+        &::before{
+            background-image: url("../../images/personal-finance.svg");
+        }
     }
-    &:nth-child(2)::before{
-        background-image: url("../../images/banking-coverage.svg");
+    
+    &:nth-child(2){
+        &::before{
+            background-image: url("../../images/banking-coverage.svg");
+        }
     }
-    &:nth-child(3)::before{
-        background-image: url("../../images/consumer-payments.svg");
+    &:nth-child(3){
+        margin-bottom: 0;
+        &::before{
+            background-image: url("../../images/consumer-payments.svg");
+        }
     }
 }
 
 .app-functions__info-text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--main-text-color);
 }
 
 .app-functions__info-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: var(--main-regular-font-weight);
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--main-desc-color);    
 }
 
 @include mobile-first(600px){
@@ -143,6 +167,43 @@
         line-height: 56px;
     }
 }
+
+@include mobile-first(690px){
+    .app-functions__info-list {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .app-functions__info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 223px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    
+    
+        &::before{
+            width: 88px;
+            height: 88px;
+        }
+        &:nth-child(3){
+            margin-right: 0;
+        }
+    }
+}
+@include mobile-first(768px){
+    .app-functions__info-item {
+        max-width: 350px;
+    
+        &::before{
+            width: 106px;
+            height: 106px;
+        }
+    }
+}
+
 @include mobile-first(1000px){
     .app-functions {
         padding-top: 150px;
