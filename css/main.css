@@ -557,6 +557,7 @@ button {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 3;
   display: none;
   max-width: 300px;
   width: 100%;
@@ -1565,6 +1566,153 @@ button {
   color: var(--main-desc-color);
 }
 
+.app-functions__info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.app-functions__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 328px;
+  width: 100%;
+}
+.app-functions__info-item::before {
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+  margin-bottom: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+.app-functions__info-item:nth-child(1)::before {
+  background-image: url("../../images/personal-finance.svg");
+}
+.app-functions__info-item:nth-child(2)::before {
+  background-image: url("../../images/banking-coverage.svg");
+}
+.app-functions__info-item:nth-child(3)::before {
+  background-image: url("../../images/consumer-payments.svg");
+}
+
+@media only screen and (min-width: 600px) {
+  .app-functions {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .app-functions__list {
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .app-functions__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-repeat: no-repeat;
+  }
+  .app-functions__item:nth-child(1) {
+    margin-bottom: 100px;
+    padding-top: 298px;
+    background-size: 401px auto;
+  }
+  .app-functions__item:nth-child(2) {
+    background-size: 363px auto;
+  }
+  .app-functions__textbox {
+    max-width: 573px;
+    width: 100%;
+  }
+  .app-functions__text {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .app-functions {
+    padding-top: 150px;
+    padding-bottom: 96px;
+  }
+  .app-functions__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 145px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .app-functions__item {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-repeat: no-repeat;
+  }
+  .app-functions__item:nth-child(1) {
+    max-width: 1015px;
+    margin-bottom: 150px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-position: calc(50% - 205px) calc(50% + 30px);
+    background-size: 445px auto;
+  }
+  .app-functions__item:nth-child(2) {
+    padding-top: 182px;
+    padding-bottom: 182px;
+    background-size: 566px auto;
+    background-position: calc(50% + 255px) calc(50% - 0px);
+  }
+  .app-functions__textbox {
+    max-width: 445px;
+  }
+  .app-functions__text {
+    text-align: start;
+  }
+  .app-functions__desc {
+    text-align: start;
+  }
+}
 .wrapper-bg--about {
   background-image: url("../../images/simple-circle.svg");
   background-position: calc(50% + 330px) calc(50% - 370px);
@@ -1906,7 +2054,7 @@ button {
   }
 }
 .site-article {
-  margin-bottom: 80px;
+  margin-bottom: 96px;
 }
 
 .site-article__wrap {
