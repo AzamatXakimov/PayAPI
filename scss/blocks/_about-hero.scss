@@ -1,6 +1,7 @@
 .wrapper-bg--about {
     background-image: url("../../images/simple-circle.svg");
-    background-position: calc(50% + 330px) calc(50% - 370px);
+    background-size: 780px 780px;
+    background-position: calc(50% + 330px) calc(50% - 700px);
 }
 
 .about-hero {
@@ -12,6 +13,7 @@
 .about-hero__title-wrap {
     max-width: 450px;
     margin: 0 auto;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -21,10 +23,42 @@
     @include font-style(var(--main-DM-font-family), 32px, var(--main-regular-font-weight), 36px, -0.25px, var(--main-text-color));
 }
 
+.about-hero__list {
+    @include list-unstiled(0px, 76px, 0px);
+}
+
+.about-hero__item {
+    text-align: center;
+
+    &:first-child {
+        margin-bottom: 48px;
+    }
+}
+
+.about-hero__subtitle {
+    margin-top: 0;
+    @include font-style(var(--main-DM-font-family), 24px, var(--main-regular-font-weight), 32px, -0.18px, var(--main-text-color));
+    white-space: nowrap;
+}
+
+.about-hero__descr {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: var(--main-regular-font-weight);
+    line-height: 28px;
+    color: var(--main-desc-color);
+}
+
+@include mobile-first(375px){
+    .wrapper-bg--about{
+     background-position: calc(50% + 330px) calc(50% - 600px);
+    }
+}
+
 @include mobile-first(660px) {
 
     .wrapper-bg--about{
-        background-position: calc(50% + 510px) calc(50% - 350px);
+        background-position: calc(50% + 480px) calc(50% - 450px);
     }
 
     .about-hero{
@@ -33,18 +67,31 @@
 
     .about-hero__title-wrap{
         max-width: 500px;
+        margin-bottom: 54px;
     }
 
     .about-hero__title {
         @include font-style(var(--main-DM-font-family), 40px, var(--main-regular-font-weight), 45px, -0.5px, var(--main-text-color));
     }
+
+    .about-hero__item {
+        display: flex;
+        align-items: start;
+        text-align: start;
+    }
+
+    .about-hero__subtitle-wrap {
+        width: 223px;
+        flex-shrink: 0;
+    }
+
+    .about-hero__subtitle {
+        margin-right: 40px;
+        @include font-style(var(--main-DM-font-family), 32px, var(--main-regular-font-weight), 40px, -0.25px, var(--main-text-color))
+    }
 }
 
 @include mobile-first(768px){
-    .wrapper-bg--about{
-        background-position: calc(50% + 450px) calc(50% - 300px);
-    }
-
     .about-hero__title-wrap{
         max-width: 573px;
     }
@@ -55,8 +102,15 @@
 }
 
 @include mobile-first(992px){
+    .about__wrap{
+        background-image: url("../../images/simple-circle.svg");
+        background-repeat: no-repeat;
+        background-size: 780px 780px;
+        background-position: calc(50% - 850px) calc(50% - 50px);
+    }
+
     .wrapper-bg--about{
-        background-position: calc(50% + 450px) calc(50% - 300px);
+        background-position: calc(50% + 480px) calc(50% - 500px);
     }
 
     .about-hero__title-wrap{
@@ -67,5 +121,9 @@
 
     .about-hero__title {
         @include font-style(var(--main-DM-font-family), 56px, var(--main-regular-font-weight), 56px, -0.37px, var(--main-text-color));
+    }
+
+    .about-hero__list{
+        margin-left: 85px;
     }
 }
