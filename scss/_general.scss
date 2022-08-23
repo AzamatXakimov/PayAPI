@@ -18,6 +18,10 @@ body{
     background-color: var(--main-body-bg-color);
 }
 
+a{
+    @include link-unstiled
+}
+
 .site-main{
     flex-grow: 1;
 }

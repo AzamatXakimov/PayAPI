@@ -13,30 +13,80 @@
 </head>
 <body>
 
-    <!-- Header start -->
-    <header class="site-header">
-        <div class="container">
-            <div class="site-header__inner">
-                <a class="logo" href="./index.html">
-                    <img src="./images/logo.svg" alt="logo">
-                </a>
-
-                <div class="site-header__navbar-window">
-                    .site-header__navbar
+    <div class="wrapper-bg">
+        <!-- Header start -->
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__inner">
+                    <a class="logo" href="./index.html">
+                        <img src="./images/logo.svg" alt="logo">
+                    </a>
+                    <div class="site-header__navbar-window">
+                        <div class="site-header__btnbox">
+                            <button class="site-header__x-btn js-close-navbar" type="button"></button>
+                        </div>
+                        <div class="site-header__navbar">
+                            <nav class="site-header__nav">
+                                <ul class="site-header__nav-list">
+                                    <li class="site-header__nav-item">
+                                        <a class="site-header__nav-link" href="./pricing.html">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li class="site-header__nav-item">
+                                        <a class="site-header__nav-link" href="#">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="site-header__nav-item">
+                                        <a class="site-header__nav-link" href="#">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a class="site-header__link" href="#">
+                                Schedule a Demo
+                            </a>
+                        </div>
+                    </div>
+                    <button class="site-header__burger js-open-navbar" type="button"></button>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Header finish -->
-
-    <!-- Main start -->
-    <main class="site-main">
+        </header>
+        <!-- Header finish -->
         <!-- Hero section start  -->
-        <section class="pricing">
+        <section class="hero">
             <div class="container">
+                <div class="hero__inner">                
+                    <div class="hero__textbox">
+                        <h1 class="hero__text">
+                            Start building with our APIs for absolutely free.
+                        </h1>
+    
+                        <form class="site-email__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                            <input class="site-email__input" type="email" name="user_email" id="user_email"
+                            aria-label="Enter your email" required placeholder="Enter email address">
+    
+                            <button class="site-email__button" type="submit">
+                                Schedule a Demo
+                            </button>
+                        </form>
+                        <span class="hero__minitext">
+                            Have any questions? 
+                            <a class="hero__minitext-link" href="#">
+                                Contact Us
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Hero section finish  -->
+    </div>
+
+    <!-- Main start -->
+    <main class="site-main">
 
     </main>
     <!-- Main finish  -->
@@ -46,5 +96,7 @@
 
     </footer>
     <!-- Footer finish -->
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -18,3 +18,11 @@
         line-height: #{$value};
     }
 }
+
+@each $type, $level in $colors{
+    @each $item, $color in $level{
+        .clr-#{$type}-#{$item}{
+            color: #{$color};
+        }
+    }
+}
