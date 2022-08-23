@@ -60,3 +60,130 @@
     color: var(--main-desc-color);
 }
 
+.app-functions__info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include list-unstiled(0,0,0)
+}
+
+.app-functions__info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 328px;
+    width: 100%;
+
+    &::before{
+        display: inline-block;
+        width: 106px;
+        height: 106px;
+        background-color: var(--main-text-color);
+        border-radius: 50%;
+        margin-bottom: 33px;
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-size: cover;
+        content: "";
+    }
+
+    &:nth-child(1)::before{
+        background-image: url("../../images/personal-finance.svg");
+    }
+    &:nth-child(2)::before{
+        background-image: url("../../images/banking-coverage.svg");
+    }
+    &:nth-child(3)::before{
+        background-image: url("../../images/consumer-payments.svg");
+    }
+}
+
+.app-functions__info-text {
+}
+
+.app-functions__info-desc {
+}
+
+@include mobile-first(600px){
+    .app-functions {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    // .app-functions__inner {
+    // }
+    
+    .app-functions__list {
+        @include list-unstiled(0, 100px, 0)
+    }
+    
+    .app-functions__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        background-repeat: no-repeat;
+        &:nth-child(1){
+            margin-bottom: 100px;
+            padding-top: 298px;
+            background-size: 401px auto;
+        }
+        &:nth-child(2){
+            background-size: 363px auto;
+        }
+    }
+    
+    .app-functions__textbox {
+        max-width: 573px;
+        width: 100%;
+    }
+    
+    .app-functions__text {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+@include mobile-first(1000px){
+    .app-functions {
+        padding-top: 150px;
+        padding-bottom: 96px;
+    }
+    
+    .app-functions__list {
+        flex-direction: column;
+        align-items: flex-start;
+        @include list-unstiled(0, 145px, 0)
+    }
+    
+    .app-functions__item {
+        width: 100%;
+        flex-direction: row;
+        background-repeat: no-repeat;
+        &:nth-child(1){
+            max-width: 1015px;
+            margin-bottom: 150px;
+            flex-direction: row-reverse;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-position: calc(50% - 205px) calc(50% + 30px);
+            background-size: 445px auto;
+        }
+        &:nth-child(2){
+            padding-top: 182px;
+            padding-bottom: 182px;
+            background-size: 566px auto;
+            background-position: calc(50% + 255px) calc(50% - 0px);
+        }
+    }
+    
+    .app-functions__textbox {
+        max-width: 445px;
+    }
+    
+    .app-functions__text {
+        text-align: start;
+    }
+    .app-functions__desc {
+        text-align: start;
+    }
+}
