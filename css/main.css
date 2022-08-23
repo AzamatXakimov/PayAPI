@@ -11,6 +11,26 @@
   --main-link-bg-color: #ba4270;
   --main-link-hover-bg: #da6d97;
   --main-white-text-color: #fbfcfe;
+  --clr-primary-100:#ba4270;
+  --clr-primary-200:#da6d97;
+  --clr-secondary-dark-100:#36536b;
+  --clr-secondary-dark-200:#1b262f;
+  --clr-secondary-light-100:#fbfcfe;
+  --clr-secondary-light-200:#6c8294;
+  --fz-100:15px;
+  --fz-200:16px;
+  --fz-300:32px;
+  --fz-400:48px;
+  --fz-500:56px;
+  --fw-100:400;
+  --fw-200:700;
+  --lh-100:18px;
+  --lh-200:28px;
+  --lh-300:25px;
+  --lh-400:32px;
+  --lh-500:40px;
+  --lh-600:56px;
+  --lh-700:72px;
 }
 
 @font-face {
@@ -71,8 +91,7 @@ h1 {
 * 2. Show the overflow in Edge and IE.
 */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -102,8 +121,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -241,8 +259,7 @@ fieldset {
 *    `fieldset` elements in all browsers.
 */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -270,8 +287,7 @@ textarea {
 */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -341,8 +357,7 @@ template {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -355,13 +370,8 @@ img {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: var(--main-font-family);
@@ -370,15 +380,89 @@ body {
 }
 
 .site-main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
+}
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary-100);
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  padding: 16px 25px;
+  text-align: center;
+  color: var(--clr-light-100);
+  border-radius: 24px;
+}
+.btn-primary:hover {
+  background-color: var(--clr-primary-200);
+}
+.btn-primary:disabled {
+  background-color: var(--clr-primary-100);
+}
+
+.fz-100 {
+  font-size: 15px;
+}
+
+.fz-200 {
+  font-size: 16px;
+}
+
+.fz-300 {
+  font-size: 32px;
+}
+
+.fz-400 {
+  font-size: 48px;
+}
+
+.fz-500 {
+  font-size: 56px;
+}
+
+.fw-100 {
+  font-weight: 400;
+}
+
+.fw-200 {
+  font-weight: 700;
+}
+
+.lh-100 {
+  line-height: 18px;
+}
+
+.lh-200 {
+  line-height: 28px;
+}
+
+.lh-300 {
+  line-height: 25px;
+}
+
+.lh-400 {
+  line-height: 32px;
+}
+
+.lh-500 {
+  line-height: 40px;
+}
+
+.lh-600 {
+  line-height: 56px;
+}
+
+.lh-700 {
+  line-height: 72px;
 }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -390,4 +474,12 @@ body {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.pricing__title {
+  font-weight: var(--fw-100);
+  font-size: var(--fz-300);
+  line-height: var(--lh-500);
+}
+
+/*# sourceMappingURL=main.css.map */
