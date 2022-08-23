@@ -1,0 +1,67 @@
+.about-us__list {
+    @include list-unstiled(0px, 76px, 0px);
+}
+
+.about-us__item {
+    text-align: center;
+
+    &:first-child {
+        margin-bottom: 48px;
+    }
+}
+
+.about-us__title {
+    margin-top: 0;
+    @include font-style(var(--main-DM-font-family), 24px, var(--main-regular-font-weight), 32px, -0.18px, var(--main-text-color));
+    white-space: nowrap;
+}
+
+.about-us__descr {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: var(--main-regular-font-weight);
+    line-height: 28px;
+    color: var(--main-desc-color);
+}
+
+.about-us__img{
+    width: 100%;
+    max-width: 1536px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+@include mobile-first(660px) {
+    .container {
+        padding: 0px 40px;
+    }
+
+    .about-us__item {
+        display: flex;
+        align-items: start;
+        text-align: start;
+    }
+
+    .about-us__title-wrap {
+        width: 223px;
+        flex-shrink: 0;
+    }
+
+    .about-us__title {
+        margin-right: 40px;
+        @include font-style(var(--main-DM-font-family), 32px, var(--main-regular-font-weight), 40px, -0.25px, var(--main-text-color))
+    }
+}
+
+@include mobile-first(992px) {
+
+    .about-us{
+        background-image: url("../../images/simple-circle.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 900px) calc(50% + 120px);
+    }
+
+    .about-us__list{
+        margin-left: 85px;
+    }
+}

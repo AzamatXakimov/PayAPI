@@ -22,3 +22,12 @@
     display: inline-block;
     text-decoration: none;
 }
+
+@mixin font-style($font-family, $font-size, $font-weight, $line-height, $letter, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter;
+    color: $color;
+}
