@@ -1,0 +1,120 @@
+.statistics {
+    margin-bottom: 48px;
+    padding-top: 40px;
+}
+
+.statistics__list {
+    @include list-unstiled(0px, 0px, 0px);
+
+    &::before {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #36536B;
+        opacity: 0.25;
+        content: "";
+    }
+
+    &::after {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #36536B;
+        opacity: 0.25;
+        content: "";
+    }
+}
+
+.statistics__item {
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.statistics__name {
+    margin-bottom: 0;
+    font-weight: var(--main-regular-font-weight);
+    line-height: 28px;
+    color: var(--main-desc-color);
+}
+
+.statistics__number {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include font-style(var(--main-DM-font-family), 56px, var(--main-regular-font-weight), 72px, -0.43px, #BA4270)
+}
+
+@include mobile-first(660px) {
+    .statistics__list {
+        display: flex;
+        // justify-content: space-between;
+        align-items: start;
+
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .statistics__item {
+        width: 100%;
+        justify-self: start;
+        text-align: start;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &::before {
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-bottom: 44px;
+            background-color: #36536B;
+            opacity: 0.25;
+            content: "";
+        }
+
+        &::after {
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-top: 16px;
+            background-color: #36536B;
+            opacity: 0.25;
+            content: "";
+        }
+    }
+
+    .statistics__name {
+        display: none;
+    }
+}
+
+@include mobile-first(992px){
+
+    .statistics{
+        padding-top: 65px;
+        background-image: url("../../images/simple-circle.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 900px) calc(50% - 300px);
+    }
+
+    .statistics__item{
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        &::before{
+            margin-bottom: 16px;
+        }
+    }
+
+    .statistics__name{
+        display: block;
+    }
+}

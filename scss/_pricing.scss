@@ -1,11 +1,8 @@
 @use "./mixins" as *;
-
-
-
 .wrapper-bg {
   background-image: url("../images/simple-circle.svg");
-  background-size: contain;
-  background-position: top -200px left calc(50% + 500px);
+  background-size: 800px;
+  background-position: top -600px left calc(50% + 500px);
 }
 
 .hero {
@@ -13,11 +10,11 @@
   padding-bottom: 0;
 }
 
-.pricing-hero .hero__textbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-inline: auto;
+.pricing-hero .hero__textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
 }
 
 .hero__text {
@@ -29,12 +26,12 @@ ul {
   @include list-unstiled(0, 0, 0);
 }
 
-.pricing{
-    margin-bottom: 80px;
+.pricing {
+  margin-bottom: 80px;
 }
 
 .pricing__title {
-  margin-bottom: 80px;
+  margin-bottom: 16px;
 }
 
 .pricing__price {
@@ -45,7 +42,7 @@ ul {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, 330px);
-  grid-gap: 48px;
+  grid-gap: 20px;
   place-content: center;
   padding: 24px 0;
   text-align: center;
@@ -66,8 +63,8 @@ ul {
 }
 
 .pricing__wrapper__item {
-    width: 50%;
-    margin-inline: auto;
+  width: 50%;
+  margin-inline: auto;
   opacity: 0.25;
 }
 
@@ -87,27 +84,3 @@ ul {
   background-size: cover;
   background-position: center;
 }
-
-// .site-article {
-//   display: grid;
-//   place-content: center;
-//   margin-bottom: 80px;
-// }
-
-// .site-article__title {
-//   letter-spacing: -1px;
-//   text-align: center;
-// }
-
-// @include media-query(medium){
-//     .site-article .site-email__input{
-//         width: 450px;
-//         max-width: 450px;
-//     }
-// }
-
-// @include media-query(medium){
-//     .pricing__title{
-//         margin-bottom: 20px;
-//     }
-// }

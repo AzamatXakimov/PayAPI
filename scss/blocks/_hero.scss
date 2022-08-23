@@ -36,14 +36,14 @@
     color: var(--main-text-color);
 }
 
-.site-email__form{
+.site-email-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.site-email__input {
+.site-email-input {
     max-width: 327px;
     width: 100%;
     padding-top: 16px;
@@ -69,6 +69,11 @@
 }
 
 .site-email__button {
+        color: #f00;
+    }
+
+
+.site-email-button {
     max-width: 327px;
     width: 100%;
     margin-top: 16px;
@@ -136,7 +141,7 @@
         text-align: center;
     }
     
-    .site-email__form{
+    .site-email-form{
         position: relative;
         top: 0;
         left: 0;
@@ -150,7 +155,11 @@
         padding-right: 60px;
     }
     
-    .site-email__button {
+    .site-email-input{
+        padding-right: 60px;
+    }
+    
+    .site-email-button {
         position: absolute;
         top: 0;
         right: 0;
