@@ -65,6 +65,7 @@
 
     &:not(:focus):not(:placeholder-shown):invalid{
         outline: 1px solid #f00;
+        color: #f00;
     }
 }
 

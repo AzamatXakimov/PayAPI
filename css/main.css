@@ -733,12 +733,15 @@ a {
 }
 .site-email-input:not(:focus):not(:-moz-placeholder-shown):invalid {
   outline: 1px solid #f00;
+  color: #f00;
 }
 .site-email-input:not(:focus):not(:-ms-input-placeholder):invalid {
   outline: 1px solid #f00;
+  color: #f00;
 }
 .site-email-input:not(:focus):not(:placeholder-shown):invalid {
   outline: 1px solid #f00;
+  color: #f00;
 }
 
 .site-email-button {
@@ -863,6 +866,246 @@ a {
   }
   .hero__minitext {
     margin-left: 27px;
+  }
+}
+.cooperation {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--main-footer-bg-color);
+  background-image: url("../../images/simple-circle.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 0px) calc(50% - 535px);
+  background-size: 780px 780px;
+}
+
+.cooperation__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cooperation__textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 456px;
+  width: 100%;
+}
+
+.cooperation__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: var(--main-DM-font-family);
+  font-weight: var(--main-regular-font-weight);
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--main-white-text-color);
+}
+
+.cooperation__desc {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: var(--main-regular-font-weight);
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--main-white-text-color);
+  opacity: 0.7;
+}
+
+.cooperation__link {
+  max-width: 129px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--main-white-text-color);
+  border: 1px solid var(--main-white-text-color);
+  border-radius: 24px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+.cooperation__link:hover {
+  color: var(--main-footer-bg-color);
+  background-color: #fff;
+}
+.cooperation__link:active {
+  color: var(--main-white-text-color);
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.cooperation__imgbox {
+  max-width: 280px;
+  margin-bottom: 56px;
+}
+
+.cooperation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.cooperation__item {
+  margin-bottom: 40px;
+}
+.cooperation__item:nth-child(5) {
+  margin-bottom: 0;
+}
+.cooperation__item:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.cooperation__img--tesla {
+  width: 107px;
+  height: 15px;
+}
+
+.cooperation__img--microsoft {
+  width: 120px;
+  height: 26px;
+}
+
+.cooperation__img--hp {
+  width: 115px;
+  height: 22px;
+}
+
+.cooperation__img--oracle {
+  width: 108px;
+  height: 14px;
+}
+
+.cooperation__img--google {
+  width: 79px;
+  height: 27px;
+}
+
+.cooperation__img--nvidia {
+  width: 113px;
+  height: 22px;
+}
+
+@media only screen and (min-width: 600px) {
+  .cooperation {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-position: calc(50% + 0px) calc(50% - 460px);
+  }
+  .cooperation__text {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .cooperation__desc {
+    margin-bottom: 32px;
+  }
+  .cooperation__imgbox {
+    max-width: 536px;
+    margin-bottom: 64px;
+  }
+  .cooperation__item {
+    margin-bottom: 46px;
+  }
+  .cooperation__item:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .cooperation__img--tesla {
+    width: 129px;
+    height: 17px;
+  }
+  .cooperation__img--microsoft {
+    width: 145px;
+    height: 31px;
+  }
+  .cooperation__img--hp {
+    width: 140px;
+    height: 27px;
+  }
+  .cooperation__img--oracle {
+    width: 131px;
+    height: 17px;
+  }
+  .cooperation__img--google {
+    width: 96px;
+    height: 33px;
+  }
+  .cooperation__img--nvidia {
+    width: 137px;
+    height: 26px;
+  }
+}
+@media only screen and (min-width: 1045px) {
+  .cooperation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: calc(50% - 540px) calc(50% - 200px);
+  }
+  .cooperation__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cooperation__textbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 445px;
+    margin-right: 20px;
+  }
+  .cooperation__text {
+    text-align: start;
+  }
+  .cooperation__desc {
+    text-align: start;
+  }
+  .cooperation__imgbox {
+    max-width: 536px;
+    margin-bottom: 0;
+  }
+  .cooperation__item {
+    margin-bottom: 39px;
+  }
+  .cooperation__item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 .wrapper-bg--about {
