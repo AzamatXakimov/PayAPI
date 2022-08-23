@@ -88,26 +88,26 @@ ul {
   background-position: center;
 }
 
-.site-article {
-  display: grid;
-  place-content: center;
-  margin-bottom: 80px;
-}
+// .site-article {
+//   display: grid;
+//   place-content: center;
+//   margin-bottom: 80px;
+// }
 
-.site-article__title {
-  letter-spacing: -1px;
-  text-align: center;
-}
+// .site-article__title {
+//   letter-spacing: -1px;
+//   text-align: center;
+// }
 
-@include media-query(medium){
-    .site-article .site-email__input{
-        width: 450px;
-        max-width: 450px;
-    }
-}
+// @include media-query(medium){
+//     .site-article .site-email__input{
+//         width: 450px;
+//         max-width: 450px;
+//     }
+// }
 
-@include media-query(medium){
-    .pricing__title{
-        margin-bottom: 20px;
-    }
-}
+// @include media-query(medium){
+//     .pricing__title{
+//         margin-bottom: 20px;
+//     }
+// }

@@ -1328,27 +1328,4 @@ ul {
   background-image: url("../images/check.svg");
   background-size: cover;
   background-position: center;
-}
-
-.site-article {
-  display: grid;
-  place-content: center;
-  margin-bottom: 80px;
-}
-
-.site-article__title {
-  letter-spacing: -1px;
-  text-align: center;
-}
-
-@media only screen and (min-width: 650px) {
-  .site-article .site-email__input {
-    width: 450px;
-    max-width: 450px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .pricing__title {
-    margin-bottom: 20px;
-  }
 }/*# sourceMappingURL=main.css.map */
