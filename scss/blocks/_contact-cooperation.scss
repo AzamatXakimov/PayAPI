@@ -1,0 +1,231 @@
+.contact-cooperation {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--main-footer-bg-color);
+  background-image: url("../../images/simple-circle.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 0px) calc(50% - 535px);
+  background-size: 780px 780px;
+}
+
+.contact-cooperation__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.contact-cooperation__textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 456px;
+  width: 100%;
+}
+
+.contact-cooperation__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: var(--main-DM-font-family);
+  font-weight: var(--main-regular-font-weight);
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--main-white-text-color);
+}
+
+.contact-cooperation__desc {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: var(--main-regular-font-weight);
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--main-white-text-color);
+  opacity: 0.7;
+}
+
+.contact-cooperation__link {
+  max-width: 129px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--main-white-text-color);
+  border: 1px solid var(--main-white-text-color);
+  border-radius: 24px;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+
+  &:hover {
+    color: var(--main-footer-bg-color);
+    background-color: #fff;
+  }
+  &:active {
+    color: var(--main-white-text-color);
+    background-color: transparent;
+    opacity: 0.5;
+  }
+}
+
+.contact-cooperation__imgbox {
+  max-width: 280px;
+  margin-bottom: 56px;
+}
+
+.contact-cooperation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include list-unstiled(0, 0, 0);
+}
+
+.contact-cooperation__item {
+  margin-bottom: 40px;
+
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
+  &:nth-child(6) {
+    margin-bottom: 0;
+  }
+}
+
+// .contact-cooperation__img-link {
+// }
+
+// .contact-cooperation__img {
+// }
+
+.contact-cooperation__img--tesla {
+  width: 107px;
+  height: 15px;
+}
+
+.contact-cooperation__img--microsoft {
+  width: 120px;
+  height: 26px;
+}
+
+.contact-cooperation__img--hp {
+  width: 115px;
+  height: 22px;
+}
+
+.contact-cooperation__img--oracle {
+  width: 108px;
+  height: 14px;
+}
+
+.contact-cooperation__img--google {
+  width: 79px;
+  height: 27px;
+}
+
+.contact-cooperation__img--nvidia {
+  width: 113px;
+  height: 22px;
+}
+
+@include mobile-first(600px) {
+  .contact-cooperation {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-position: calc(50% + 0px) calc(50% - 460px);
+  }
+
+  .contact-cooperation__text {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .contact-cooperation__desc {
+    margin-bottom: 32px;
+  }
+
+  .contact-cooperation__imgbox {
+    max-width: 536px;
+    margin-bottom: 64px;
+  }
+
+  .contact-cooperation__item {
+    margin-bottom: 46px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  .contact-cooperation__img--tesla {
+    width: 129px;
+    height: 17px;
+  }
+
+  .contact-cooperation__img--microsoft {
+    width: 145px;
+    height: 31px;
+  }
+
+  .contact-cooperation__img--hp {
+    width: 140px;
+    height: 27px;
+  }
+
+  .contact-cooperation__img--oracle {
+    width: 131px;
+    height: 17px;
+  }
+
+  .contact-cooperation__img--google {
+    width: 96px;
+    height: 33px;
+  }
+
+  .contact-cooperation__img--nvidia {
+    width: 137px;
+    height: 26px;
+  }
+}
+@include mobile-first(1045px) {
+  .contact-cooperation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: calc(50% - 540px) calc(50% - 200px);
+  }
+
+  .contact-cooperation__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-cooperation__textbox {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 445px;
+    margin-right: 20px;
+  }
+
+  .contact-cooperation__text {
+    text-align: start;
+  }
+
+  .contact-cooperation__desc {
+    text-align: start;
+  }
+
+  .contact-cooperation__imgbox {
+    max-width: 536px;
+    margin-bottom: 0;
+  }
+
+  .contact-cooperation__item {
+    margin-bottom: 39px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .wrapper-bg{
-    background-image: url("../../images/hero-bg-t.svg");
+    background-image: url("../images/hero-bg-t.svg");
     background-position: calc(50% + 0px) calc(50% - 390px);
     background-repeat: no-repeat;
     background-size: 780px auto;
@@ -65,9 +65,13 @@
 
     &:not(:focus):not(:placeholder-shown):invalid{
         outline: 1px solid #f00;
-        color: #f00;
     }
 }
+
+.site-email__button {
+        color: #f00;
+    }
+
 
 .site-email-button {
     max-width: 327px;
@@ -147,6 +151,10 @@
         align-items: center;
     }
     
+    .site-email__input{
+        padding-right: 60px;
+    }
+    
     .site-email-input{
         padding-right: 60px;
     }
@@ -166,7 +174,7 @@
 
 @include mobile-first(825px){
     .wrapper-bg{
-        background-image: url("../../images/hero-bg.svg");
+        background-image: url("../images/hero-bg.svg");
         background-position: calc(50% + 440px) calc(50% - 60px);
         background-size: 780px auto;
     }

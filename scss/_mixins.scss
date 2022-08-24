@@ -1,24 +1,67 @@
+@use "./media_query" as *;
+
 @mixin sticky-footer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
 }
 
-@mixin mobile-first ($min) {
-    @media only screen and (min-width:$min){
-        @content;
-    }
+@mixin mobile-first($min) {
+  @media only screen and (min-width: $min) {
+    @content;
+  }
 }
 
 @mixin list-unstiled($m-t, $m-b, $pl) {
-    margin-top: $m-t;
-    margin-bottom: $m-b;
-    padding-left: $pl;
-    list-style: none;
+  margin-top: $m-t;
+  margin-bottom: $m-b;
+  padding-left: $pl;
+  list-style: none;
 }
 
 @mixin link-unstiled {
+  display: inline-block;
+  text-decoration: none;
+}
+
+@mixin defaultBtn {
+  padding: 16px 25px;
+  text-align: center;
+  color: var(--clr-light-100);
+  border-radius: 24px;
+}
+
+@mixin media-query($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin heading-200 {
+  font-size: var(--fz-400);
+  font-weight: var(--fw-100);
+  line-height: var(--lh-600);
+}
+
+@mixin heading-300-big{
+  font-weight: var(--fw-100);
+  font-size: var(--fz-300);
+  line-height: var(--lh-500);
+}
+
+@mixin heading-300-small{
+  font-weight: var(--fw-200);
+  font-size: 18px;
+  line-height: var(--lh-300);
+}
+
+@mixin heading-400{
+  font-weight: var(--fw-100);
+  font-size: var(--fz-500);
+  line-height: var(--lh-700);
     display: inline-block;
     text-decoration: none;
 }

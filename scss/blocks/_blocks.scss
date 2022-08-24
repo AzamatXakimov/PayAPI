@@ -1,9 +1,12 @@
 @import "visually-hidden";
 @import "container";
 @import "header";
+@import "hero";
 // Page 1
 @import "hero";
 @import "cooperation";
+@import "app-functions";
+@import "about-service";
 
 
 // Page 2
@@ -13,11 +16,11 @@
 @import "article";
 
 // Page3
-
+@import "./pricing";
 
 
 // Page 4
 
-
+@import "./contact";
 @import "footer";
 @import "modal";
