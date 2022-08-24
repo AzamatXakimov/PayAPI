@@ -1,10 +1,9 @@
 .statistics {
     margin-bottom: 48px;
-    padding-top: 40px;
 }
 
 .statistics__list {
-    @include list-unstiled(0px, 0px, 0px);
+    @include list-unstiled(0px, 48px, 0px);
 
     &::before {
         display: block;
@@ -46,12 +45,37 @@
     @include font-style(var(--main-DM-font-family), 56px, var(--main-regular-font-weight), 72px, -0.43px, #BA4270)
 }
 
+.statistics__text-list {
+    @include list-unstiled(0px, 0px, 0px);
+}
+
+.statistics__text-item {
+    text-align: center;
+
+    &:first-child {
+        margin-bottom: 48px;
+    }
+}
+
+.statistics__title {
+    margin-top: 0;
+    @include font-style(var(--main-DM-font-family), 24px, var(--main-regular-font-weight), 32px, -0.18px, var(--main-text-color));
+    white-space: nowrap;
+}
+
+.statistics__descr {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: var(--main-regular-font-weight);
+    line-height: 28px;
+    color: var(--main-desc-color);
+}
+
 @include mobile-first(660px) {
     .statistics__list {
         display: flex;
-        // justify-content: space-between;
         align-items: start;
-
+        
         &::before {
             content: none;
         }
@@ -94,15 +118,28 @@
     .statistics__name {
         display: none;
     }
+
+    .statistics__text-item{
+        display: flex;
+        align-items: start;
+        text-align: start;
+    }
+
+    .statistics__title-wrap {
+        width: 223px;
+        flex-shrink: 0;
+    }
+
+    .statistics__title {
+        margin-right: 40px;
+        @include font-style(var(--main-DM-font-family), 32px, var(--main-regular-font-weight), 40px, -0.25px, var(--main-text-color))
+    }
 }
 
 @include mobile-first(992px){
 
     .statistics{
-        padding-top: 65px;
-        background-image: url("../../images/simple-circle.svg");
-        background-repeat: no-repeat;
-        background-position: calc(50% - 900px) calc(50% - 300px);
+        margin-bottom: 100px;
     }
 
     .statistics__item{
@@ -116,5 +153,9 @@
 
     .statistics__name{
         display: block;
+    }
+
+    .statistics__text-list{
+        margin-left: 85px;
     }
 }
