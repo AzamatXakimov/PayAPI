@@ -1,47 +1,109 @@
-.contact-hero{
-    padding-block: 100px 50px;
+.contact-wrapper-bg {
+  background-image: url("../images/simple-circle.svg");
+  background-size: 780px;
+  background-position: top -600px left calc(50% + 800px);
+  background-repeat: no-repeat;
 }
 
-.contact__wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.contact-hero {
+  padding-block: 100px 50px;
 }
 
-.contact__form{
-    display: grid;
+.contact__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.input{
-    padding: 16px;
-    border: 1px solid transparent;
-    border-bottom: 1px solid var(--clr-secondary-100);
-    background-color: transparent;
+.contact__form {
+  display: grid;
+  max-width: 450px;
 }
 
-.textarea{
-    padding: 16px;
-    border: 1px solid transparent;
-    border-bottom: 1px solid var(--clr-secondary-100);
-    background-color: transparent;
+.input {
+  padding: 16px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--clr-secondary-100);
+  background-color: transparent;
+
+  &:not(:placeholder-shown):invalid {
+    color: crimson;
+  }
 }
 
-.contact__inner{
-    display: grid;
-    place-content: center;
+.input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--clr-primary-100);
 }
 
-.contact__outer{
-    display: grid;
-    place-items: center;
-    text-align: center;
-    max-width: 650px;
-    margin-inline: auto;
+.input:not(:placeholder-shown):invalid + .contact__span {
+  opacity: 1;
 }
 
-@include media-query(laptop){
-    .contact__inner{
-        margin-right: 100px;
-    }
+.textarea {
+  resize: none;
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--clr-secondary-100);
+  background-color: transparent;
+}
+
+.contact__inner {
+  display: grid;
+  place-content: center;
+}
+
+.contact__outer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  max-width: 500px;
+  align-self: flex-start;
+  margin-inline: auto;
+}
+.contact__label {
+  display: grid;
+  grid-gap: 3px;
+}
+.contact__label--flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact__span {
+  margin-bottom: 18px;
+  opacity: 0;
+  color: crimson;
+  font-size: 12px;
+}
+
+.contact__btn {
+  width: max-content;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  padding: 16px 50px;
+}
+
+@include media-query(laptop) {
+  .contact__inner {
+    margin-right: 100px;
+  }
+}
+
+@include media-query(tiny) {
+  .contact-wrapper-bg {
+    background-image: url("../images/simple-circle.svg");
+    background-size: 780px;
+    background-position: top -600px left calc(50% + 300px);
+    background-repeat: no-repeat;
+  }
+}
+
+@include media-query(laptop) {
+  .contact-wrapper-bg {
+    background-position: top -600px left calc(50% + 500px);
+  }
 }

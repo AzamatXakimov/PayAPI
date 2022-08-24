@@ -58,10 +58,6 @@
         </header>
         <!-- Header finish -->
 
-    </div>
-
-    <!-- Main start -->
-    <main class="site-main">
         <!-- Hero section start  -->
         <section class="contact-hero">
             <div class="container">
@@ -76,25 +72,52 @@
             </div>
         </section>
         <!-- Hero section finish  -->
+
+    </div>
+
+    <!-- Main start -->
+    <main class="site-main">
+
         <section class="contact">
             <div class="container">
                 <div class="contact__wrapper">
                     <div class="contact__inner">
                         <form class="contact__form" action="https://echo.htmlacademy.ru/courses">
-                            <input class="input contact__input" name="user_name" aria-label="enter your name" type="text" placeholder="Name">
-                            <input class="input contact__input" name="user_email" aria-label="enter your email" type="text" placeholder="Email Address">
-                            <input class="input contact__input" name="user_company" aria-label="enter company name" type="text" placeholder="Company Name">
-                            <input class="input contact__input" name="user_company_title" aria-label="enter company title" type="text" placeholder="Title">
-
-                            <textarea class="contact__textarea textarea" name="user_message" cols="30" rows="10" aria-label="enter your message" placeholder="Message"></textarea>
-
                             <label class="contact__label">
-                                <input class="input contact__input" name="user_choice" aria-label="Stay up-to-date with company announcements and updates to our API" type="checkbox" placeholder="Stay up-to-date with company announcements and updates to our API">
-                                <span class="contact__span clr-secondary-100 fz-100 lh-200">
+                                <input class="input contact__input" name="user_name" aria-label="enter your name"
+                                    type="text" placeholder="Name" minlength="3" required>
+                                <span class="contact__span">This can't be empty</span>
+                            </label>
+                            <label class="contact__label">
+                                <input class="input contact__input" name="user_email" aria-label="enter your email"
+                                    type="text" placeholder="Email Address" minlength="3" required>
+                                <span class="contact__span">This can't be empty</span>
+                            </label>
+                            <label class="contact__label">
+                                <input class="input contact__input" name="user_company" aria-label="enter company name"
+                                    type="text" placeholder="Company Name" minlength="3" required>
+                                <span class="contact__span">This can't be empty</span>
+                            </label>
+                            <label class="contact__label">
+                                <input class="input contact__input" name="user_company_title"
+                                    aria-label="enter company title" type="text" placeholder="Title" minlength="3"
+                                    required>
+                                <span class="contact__span">This can't be empty</span>
+                            </label>
+
+                            <textarea class="contact__textarea textarea" name="user_message" cols="30" rows="10"
+                                aria-label="enter your message" placeholder="Message"></textarea>
+
+                            <label class="contact__label contact__label--flex">
+                                <input class="input contact__input" name="user_choice"
+                                    aria-label="Stay up-to-date with company announcements and updates to our API"
+                                    type="checkbox"
+                                    placeholder="Stay up-to-date with company announcements and updates to our API">
+                                <span class="contact__checkspan clr-secondary-100 fz-100 lh-200">
                                     Stay up-to-date with company announcements and updates to our API
                                 </span>
                             </label>
-                            <button type="submit"></button>
+                            <button class="contact__btn btn-light" type="submit">Submit</button>
                         </form>
                     </div>
                     <div class="contact__outer">
@@ -111,8 +134,8 @@
                                 </li>
                                 <li class="cooperation__item">
                                     <a class="cooperation__img-link" href="#" target="blank">
-                                        <img class="cooperation__img cooperation__img--microsoft" src="./images/microsoft.svg"
-                                            alt="Microsoft company">
+                                        <img class="cooperation__img cooperation__img--microsoft"
+                                            src="./images/microsoft.svg" alt="Microsoft company">
                                     </a>
                                 </li>
                                 <li class="cooperation__item">

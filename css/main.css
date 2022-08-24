@@ -1977,6 +1977,13 @@ ul {
   background-position: center;
 }
 
+.contact-wrapper-bg {
+  background-image: url("../images/simple-circle.svg");
+  background-size: 780px;
+  background-position: top -600px left calc(50% + 800px);
+  background-repeat: no-repeat;
+}
+
 .contact-hero {
   padding-block: 100px 50px;
 }
@@ -1997,6 +2004,7 @@ ul {
 
 .contact__form {
   display: grid;
+  max-width: 450px;
 }
 
 .input {
@@ -2005,8 +2013,37 @@ ul {
   border-bottom: 1px solid var(--clr-secondary-100);
   background-color: transparent;
 }
+.input:not(:-moz-placeholder-shown):invalid {
+  color: crimson;
+}
+.input:not(:-ms-input-placeholder):invalid {
+  color: crimson;
+}
+.input:not(:placeholder-shown):invalid {
+  color: crimson;
+}
+
+.input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--clr-primary-100);
+}
+
+.input:not(:-moz-placeholder-shown):invalid + .contact__span {
+  opacity: 1;
+}
+
+.input:not(:-ms-input-placeholder):invalid + .contact__span {
+  opacity: 1;
+}
+
+.input:not(:placeholder-shown):invalid + .contact__span {
+  opacity: 1;
+}
 
 .textarea {
+  resize: none;
+  margin-bottom: 24px;
   padding: 16px;
   border: 1px solid transparent;
   border-bottom: 1px solid var(--clr-secondary-100);
@@ -2022,12 +2059,57 @@ ul {
   display: grid;
   place-items: center;
   text-align: center;
-  max-width: 650px;
+  max-width: 500px;
+  align-self: flex-start;
   margin-inline: auto;
+}
+
+.contact__label {
+  display: grid;
+  grid-gap: 3px;
+}
+
+.contact__label--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.contact__span {
+  margin-bottom: 18px;
+  opacity: 0;
+  color: crimson;
+  font-size: 12px;
+}
+
+.contact__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  padding: 16px 50px;
 }
 
 @media only screen and (min-width: 992px) {
   .contact__inner {
     margin-right: 100px;
+  }
+}
+@media only screen and (min-width: 280px) {
+  .contact-wrapper-bg {
+    background-image: url("../images/simple-circle.svg");
+    background-size: 780px;
+    background-position: top -600px left calc(50% + 300px);
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-wrapper-bg {
+    background-position: top -600px left calc(50% + 500px);
   }
 }/*# sourceMappingURL=main.css.map */
