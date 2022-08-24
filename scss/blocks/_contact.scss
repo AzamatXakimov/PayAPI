@@ -271,12 +271,28 @@
 
 .input {
   padding: 16px;
+  font-weight: var(--main-regular-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  
+  color: var(--main-text-color);
+  
   border: 1px solid transparent;
-  border-bottom: 1px solid var(--clr-secondary-100);
+  // border-bottom: 1px solid var(--clr-secondary-100);
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   background-color: transparent;
-
+  outline: none;
+  &::placeholder{ 
+    opacity: 0.5;
+  }
+  &:focus{
+    border-bottom: 1px solid rgba(54, 83, 107, 1);
+  }
+  
   &:not(:placeholder-shown):invalid {
+    opacity: 1;
     color: crimson;
+    border-bottom-color: #FF0000;
   }
 }
 
@@ -294,9 +310,24 @@
   resize: none;
   margin-bottom: 24px;
   padding: 16px;
+  font-weight: var(--main-regular-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  
+  color: var(--main-text-color);
   border: 1px solid transparent;
-  border-bottom: 1px solid var(--clr-secondary-100);
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   background-color: transparent;
+  outline: none;
+
+  &:focus{
+    border-bottom: 1px solid rgba(54, 83, 107, 1);
+  }
+  
+  &:not(:placeholder-shown):invalid {
+    color: crimson;
+    border-bottom-color: #FF0000;
+  }
 }
 
 .contact__inner {
@@ -312,9 +343,13 @@
   align-self: flex-start;
   margin-inline: auto;
 }
+
 .contact__title{
   margin-bottom: 40px;
 }
+
+
+
 .contact__label {
   display: grid;
   grid-gap: 3px;
