@@ -82,7 +82,7 @@
             <div class="container">
                 <div class="contact__wrapper">
                     <div class="contact__inner">
-                        <form class="contact__form" action="https://echo.htmlacademy.ru/courses">
+                        <form class="contact__form" method="post" action="https://echo.htmlacademy.ru/courses" autocomplete="off">
                             <label class="contact__label">
                                 <input class="input contact__input" name="user_name" aria-label="enter your name"
                                     type="text" placeholder="Name" minlength="3" required>
@@ -106,7 +106,7 @@
                             </label>
 
                             <textarea class="contact__textarea textarea" name="user_message" cols="30" rows="10"
-                                aria-label="enter your message" placeholder="Message"></textarea>
+                                aria-label="enter your message" minlength="3" placeholder="Message"></textarea>
 
                             <label class="contact__label contact__label--flex">
                                 <input class="input contact__input" name="user_choice"
