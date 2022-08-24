@@ -26,7 +26,7 @@
     padding-left: 24px;
     height: 100%;
     background-color: var(--main-footer-bg-color);
-    background-image: url("../../images/simple-circle.svg");
+    background-image: url("../images/simple-circle.svg");
     background-repeat: no-repeat;
     background-position: calc(50% - 40px) calc(50% - 500px);
     animation-name: navbar-animation;
@@ -63,7 +63,7 @@
     height: 23px;
     border: none;
     background-color: transparent;
-    background-image: url("../../images/X.svg");
+    background-image: url("../images/X.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -132,7 +132,7 @@
     height: 17px;
     background-color: transparent;
     border: none;
-    background-image: url("../../images/burger.svg");
+    background-image: url("../images/burger.svg");
     background-position: center;
     background-repeat: no-repeat;
 }

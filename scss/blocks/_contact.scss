@@ -24,11 +24,18 @@
 .input {
   padding: 16px;
   border: 1px solid transparent;
-  border-bottom: 1px solid var(--clr-secondary-100);
+  // border-bottom: 1px solid var(--clr-secondary-100);
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   background-color: transparent;
-
+  outline: none;
+  
+  &:focus{
+    border-bottom: 1px solid rgba(54, 83, 107, 1);
+  }
+  
   &:not(:placeholder-shown):invalid {
     color: crimson;
+    border-bottom-color: #FF0000;
   }
 }
 

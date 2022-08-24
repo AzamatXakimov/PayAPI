@@ -1,5 +1,5 @@
 .wrapper-bg--about {
-    background-image: url("../../images/simple-circle.svg");
+    background-image: url("../images/simple-circle.svg");
     background-size: 780px 780px;
     background-position: calc(50% + 330px) calc(50% - 700px);
 }
@@ -103,7 +103,7 @@
 
 @include mobile-first(992px){
     .about__wrap{
-        background-image: url("../../images/simple-circle.svg");
+        background-image: url("../images/simple-circle.svg");
         background-repeat: no-repeat;
         background-size: 780px 780px;
         background-position: calc(50% - 850px) calc(50% - 50px);
